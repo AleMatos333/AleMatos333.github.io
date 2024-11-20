@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMarket</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">SuperMarket</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">SuperMarket</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="boton-menu boton-volver" href="./index.html">
+                            <i class="bi bi-arrow-return-left"></i> Seguir comprando
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito active" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carrito
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2024 SuperMarket</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal">Carrito</h2>
+            <div class="contenedor-carrito">
+                <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío. <i class="bi bi-emoji-frown"></i></p>
+
+                <div id="carrito-productos" class="carrito-productos disabled">
+                    <div class="carrito-producto">
+                        <img src="img/comida/sandwich serrano.jpg" alt="producto-imagen" width="85%">
+                        <div class="carrito-producto-titulo">
+                            <small>Título</small>
+                            <h3>Sándwich serrano</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>$10</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$10</p>
+                        </div>
+                        <button class="carrito-producto-eliminar"></button>
+                    </div>
+                    <div class="carrito-producto">
+                        <img src="img/comida/sandwixh clasico.jpeg" alt="producto-imagen" width="85%">
+                        <div class="carrito-producto-titulo">
+                            <small>Título</small>
+                            <h3>Sándwich Clásico</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>$5</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$5</p>
+                        </div>
+                        <button class="carrito-producto-eliminar"></button>
+                    </div>
+                    <div class="carrito-producto">
+                        <img src="img/comida/ensalada cesar.jpeg" alt="producto-imagen" width="85%">
+                        <div class="carrito-producto-titulo">
+                            <small>Título</small>
+                            <h3>Ensalada César</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>$6</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$6</p>
+                        </div>
+                        <button class="carrito-producto-eliminar"></button>
+                    </div>
+                    <div class="carrito-producto">
+                        <img src="img/comida/ensalada mediterranea.jpeg" alt="producto-imagen" width="85%">
+                        <div class="carrito-producto-titulo">
+                            <small>Título</small>
+                            <h3>Ensalada Mediterránea</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>$8</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$8</p>
+                        </div>
+                        <button class="carrito-producto-eliminar"></button>
+                    </div>
+                    <div class="carrito-producto">
+                        <img src="img/comida/lomo simple.jpg" alt="producto-imagen" width="85%">
+                        <div class="carrito-producto-titulo">
+                            <small>Título</small>
+                            <h3>Lomo Simple</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>$12</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$12</p>
+                        </div>
+                        <button class="carrito-producto-eliminar"></button>
+                    </div>
+                    <div class="carrito-producto">
+                        <img src="img/comida/lomo completo.jpg" alt="producto-imagen" width="85%">
+                        <div class="carrito-producto-titulo">
+                            <small>Título</small>
+                            <h3>Lomo completo</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>$15</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$15</p>
+                        </div>
+                        <button class="carrito-producto-eliminar"></button>
+                    </div>
+                    <div class="carrito-producto">
+                        <img src="img/comida/lomo con rucula.jpeg" alt="producto-imagen" width="85%">
+                        <div class="carrito-producto-titulo">
+                            <small>Título</small>
+                            <h3>Lomo con Rúcula</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>$18</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$18</p>
+                        </div>
+                        <button class="carrito-producto-eliminar"></button>
+                    </div>
+                </div>
+
+                <div id="carrito-acciones" class="carrito-acciones disabled">
+                    <div class="carrito-acciones-izquierda">
+                        <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
+                    </div>
+                    <div class="carrito-acciones-derecha">
+                        <div class="carrito-acciones-total">
+                            <p>Total:</p>
+                            <p id="total">$3000</p>
+                        </div>
+                        <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
+                    </div>
+                </div>
+
+                <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
+
+            </div>
+        </main>
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>

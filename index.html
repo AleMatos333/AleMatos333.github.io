@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarpiShop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">CarpiShop</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">SuperMarket</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button id="todos" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
+                    </li>
+                    <li>
+                        <button id="Sándwich" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Sándwich</button>
+                    </li>
+                    <li>
+                        <button id="Ensalada" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Ensalada</button>
+                    </li>
+                    <li>
+                        <button id="Lomo" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Lomo</button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2024 SuperMarket</p>
+            </footer>
+        </aside>
+        <main>
+            <h1 class="titulo-principal" id="titulo-principal">Todos los productos</h1>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <div class="producto">
+                    <img class="producto-imagen" src="img/comida/sandwich serrano.jpg" alt="producto-imagen" width="85%">
+                    <div class="producto-detalles">
+                        <h3 class="producto-titulo"> Sándwich Serrano</h3>
+                        <p class="producto-precio">$10</p>
+                        <button class="producto-agregar">Agregar</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img class="producto-imagen" src="img/comida/sandwixh clasico.jpeg" alt="producto-imagen" width="100%">
+                    <div class="producto-detalles">
+                        <h3 class="producto-titulo">Sándwich Clásico</h3>
+                        <p class="producto-precio">$5</p>
+                        <button class="producto-agregar">Agregar</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img class="producto-imagen" src="img/comida/ensalada cesar.jpeg" alt="producto-imagen" width="100%">
+                    <div class="producto-detalles">
+                        <h3 class="producto-titulo">Ensalada César</h3>
+                        <p class="producto-precio">$6</p>
+                        <button class="producto-agregar">Agregar</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img class="producto-imagen" src="img/comida/ensalada mediterranea.jpeg" alt="producto-imagen" width="75%">
+                    <div class="producto-detalles">
+                        <h3 class="producto-titulo">Ensalada Mediterránea</h3>
+                        <p class="producto-precio">$8</p>
+                        <button class="producto-agregar">Agregar</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img class="producto-imagen" src="img/comida/lomo simple.jpg" alt="producto-imagen" width="100%">
+                    <div class="producto-detalles">
+                        <h3 class="producto-titulo">Lomo Simple</h3>
+                        <p class="producto-precio">$12</p>
+                        <button class="producto-agregar">Agregar</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img class="producto-imagen" src="img/comida/lomo completo.jpg" alt="producto-imagen" width="82%">
+                    <div class="producto-detalles">
+                        <h3 class="producto-titulo">Lomo completo</h3>
+                        <p class="producto-precio">$15</p>
+                        <button class="producto-agregar">Agregar</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img class="producto-imagen" src="img/comida/lomo con rucula.jpeg" alt="producto-imagen" width="85%">
+                    <div class="producto-detalles">
+                        <h3 class="producto-titulo">Lomo con Rúcula</h3>
+                        <p class="producto-precio">$18</p>
+                        <button class="producto-agregar">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
